@@ -4,7 +4,7 @@
 #include "Character.h"
 using namespace std;
 
-//
+
 void BasicMonster::levelup(void)
 {
 	level += 1;
