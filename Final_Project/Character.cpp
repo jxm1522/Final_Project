@@ -4,39 +4,47 @@
 
 using namespace std;
 
-void Character::levelup(void)
+void Character::levelUp()
 {
 	level += 1;
 }
 
-int Character::gethealth(void)
+int Character::getHealth(void)
 {
 	return health_points;
 }
 
-void Character::sethealth(int x)
+void Character::setHealth(int x)
 {
 	health_points = x;
 }
 
-int Character::getexperience(void)
+int Character::getExperience(void)
 {
 	return experience;
 }
 
-void Character::setexperience(int x)
+void Character::setExperience(int x)
 {
 	experience = x;
 }
 
-int Character::getlevel(void)
+int Character::getLevel(void)
 {
 	return level;
 }
 
-void Character::setlevel(int x)
+void Character::setLevel(int x)
 {
 	level = x;
+}
+
+int Character::getArmor() {
+
+}
+
+void Character::setArmor(int Armor) {
+
 }
 
 void Character::attack(const BasicMonster &Monster) {
