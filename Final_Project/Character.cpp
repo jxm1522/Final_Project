@@ -1,5 +1,7 @@
+#include "pch.h"
 #include <iostream>
 #include "Character.h"
+
 using namespace std;
 
 void Character::levelup(void)
@@ -35,4 +37,8 @@ int Character::getlevel(void)
 void Character::setlevel(int x)
 {
 	level = x;
+}
+
+void Character::attack(const BasicMonster &Monster) {
+
 }

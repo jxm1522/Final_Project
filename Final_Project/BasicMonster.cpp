@@ -1,5 +1,7 @@
+#include "pch.h"
 #include <iostream>
 #include "BasicMonster.h"
+#include "Character.h"
 using namespace std;
 
 
@@ -36,4 +38,8 @@ int BasicMonster::getlevel(void)
 void BasicMonster::setlevel(int x)
 {
 	level = x;
+}
+
+void BasicMonster::attack(const Character &Char) {
+
 }
