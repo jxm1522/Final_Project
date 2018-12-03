@@ -18,7 +18,7 @@ public:
 	void setexperience(int x);
 	int getlevel(void);
 	void setlevel(int x);
-
+	
 	// Interactive functions
 	virtual void attack(const BasicMonster &);
 };
