@@ -9,7 +9,7 @@ private:
 	int health_points, experience, level;
 	
 public:
-	friend class BasicMonster;
+	
 	// Setters and Getters
 	void levelup(void);
 	int gethealth(void);
@@ -18,8 +18,11 @@ public:
 	void setexperience(int x);
 	int getlevel(void);
 	void setlevel(int x);
+
+	// Damage function - will be overriden in derived classes
+	int damage();
 	
 	// Interactive functions
-	virtual void attack(const BasicMonster &);
+	virtual void fight(const BasicMonster &M);
 };
 

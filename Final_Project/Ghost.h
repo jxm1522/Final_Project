@@ -10,5 +10,8 @@ private:
 
 public:
 
+	Ghost(int cur_level);
+	Ghost(int health, int exp, int cur_level);
+	int special();
 	
 };

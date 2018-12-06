@@ -19,5 +19,4 @@ public:
 	int getlevel(void);
 	void setlevel(int x);
 		
-	virtual void attack(int x, int y);
 };
