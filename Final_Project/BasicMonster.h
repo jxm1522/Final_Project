@@ -19,5 +19,5 @@ public:
 	int getlevel(void);
 	void setlevel(int x);
 		
-	void attack(const Character &);
+	virtual void attack(const Character &);
 };
