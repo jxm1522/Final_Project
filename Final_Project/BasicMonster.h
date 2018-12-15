@@ -9,7 +9,7 @@ private:
 	int health_points, experience, level;
 
 public:
-	friend class Character;
+
 	// Setters and Getters
 	void levelup(void);
 	int gethealth(void);
@@ -19,5 +19,4 @@ public:
 	int getlevel(void);
 	void setlevel(int x);
 		
-	void attack(const Character &);
 };
