@@ -6,10 +6,10 @@ using namespace std;
 class Character
 {
 private:
-	int health_points, experience, level, armor;
+	int health_points, experience, level, armor, damage;
 	
 public:
-	friend class BasicMonster;
+	
 	// Setters and Getters
 	void levelUp();
 	int getHealth(void);
@@ -21,7 +21,9 @@ public:
 	int getArmor(void);
 	void setArmor(int x);
 
+	int damage();
+
 	// Interactive functions
-	virtual void attack(const BasicMonster &);
+	void fight(const BasicMonster &);
 };
 
