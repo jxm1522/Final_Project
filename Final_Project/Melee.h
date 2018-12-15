@@ -8,5 +8,5 @@ class Melee : protected Character
 public:
 	
 	Melee();
-	int damage();
+	int doDamage();
 };
