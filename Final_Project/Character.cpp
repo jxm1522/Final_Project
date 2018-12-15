@@ -4,49 +4,59 @@
 
 using namespace std;
 
-void Character::levelUp()
+void Character::levelup(void)
 {
 	level += 1;
 }
 
-int Character::getHealth(void)
+int Character::gethealth(void)
 {
 	return health_points;
 }
 
-void Character::setHealth(int x)
+void Character::sethealth(int x)
 {
 	health_points = x;
 }
 
-int Character::getExperience(void)
+int Character::getexperience(void)
 {
 	return experience;
 }
 
-void Character::setExperience(int x)
+void Character::setexperience(int x)
 {
 	experience = x;
 }
 
-int Character::getLevel(void)
+int Character::getlevel(void)
 {
 	return level;
 }
 
-void Character::setLevel(int x)
+void Character::setlevel(int x)
 {
 	level = x;
 }
 
-int Character::getArmor() {
-
+int Character::damage()
+{
+	return 10 * level;
 }
 
-void Character::setArmor(int Armor) {
+void Character::fight(const BasicMonster &M)
+{
+	int temp, enemy_damage;
 
-}
+	enemy_damage = 10 * M.getlevel;
 
-void Character::attack(const BasicMonster &Monster) {
+	temp = M.gethealth - this->damage;
+	M.sethealth(temp);
 
+	health_points = this->health_points - enemy_damage;
+
+
+	cout << "You attack the enemy!";
+	cout << "You do " << this->damage << " points of damage!";
+	cout << "The enemy does " << enemy_damage << " points of damage back!";
 }
