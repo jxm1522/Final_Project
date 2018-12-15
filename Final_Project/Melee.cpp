@@ -13,7 +13,7 @@ Melee::Melee()
 	level = 1;
 }
 
-int Melee::damage()
+int Melee::doDamage()
 {
 	return 15*level;
 }

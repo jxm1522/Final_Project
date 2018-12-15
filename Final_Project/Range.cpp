@@ -10,7 +10,7 @@ Range::Range()
 	level = 1;
 }
 
-int Range::damage()
+int Range::doDamage()
 {
 	return 11*level;
 }
