@@ -48,7 +48,7 @@ void Character::fight(BasicMonster &M)
 {
 	int temp, enemy_damage;
 
-	enemy_damage = 10 * level;
+	enemy_damage = 10 * M.getlevel();
 
 	temp = M.gethealth() - this->damage;
 	M.sethealth(temp);
