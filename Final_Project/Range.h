@@ -7,5 +7,5 @@ class Range : protected Character
 {
 public:
 	Range();
-	int damage();
+	int doDamage();
 };
