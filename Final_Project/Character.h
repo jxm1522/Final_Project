@@ -18,12 +18,12 @@ public:
 	void setExperience(int x);
 	int getLevel(void);
 	void setLevel(int x);
-	int getArmor(void);
-	void setArmor(int x);
+	//int getArmor(void);
+	//void setArmor(int x);
 
-	int damage();
+	int doDamage();
 
 	// Interactive functions
-	void fight(const BasicMonster &);
+	void fight(BasicMonster &);
 };
 

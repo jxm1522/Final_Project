@@ -1,7 +1,7 @@
 #include "pch.h"
 #include <iostream>
 #include "Character.h"
-
+#include "BasicMonster.h"
 using namespace std;
 
 void Character::levelUp()
@@ -39,16 +39,16 @@ void Character::setLevel(int x)
 	level = x;
 }
 
-int Character::damage()
+int Character::doDamage()
 {
 	return 10 * level;
 }
 
-void Character::fight(const BasicMonster &M)
+void Character::fight(BasicMonster &M)
 {
 	int temp, enemy_damage;
 
-	enemy_damage = 10 * M.getlevel;
+	enemy_damage = 10 * (M.getlevel);
 
 	temp = M.gethealth - this->damage;
 	M.sethealth(temp);
