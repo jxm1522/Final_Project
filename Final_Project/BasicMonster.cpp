@@ -15,6 +15,7 @@ int BasicMonster::gethealth(void)
 	return health_points;
 }
 
+
 void BasicMonster::sethealth(int x)
 {
 	health_points = x;

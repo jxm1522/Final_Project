@@ -1,4 +1,6 @@
 #pragma once
+#include "pch.h"
+
 #include <iostream>
 #include "Range.h"
 using namespace std;

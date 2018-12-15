@@ -1,4 +1,6 @@
 #include <iostream>
+#include "pch.h"
+
 #include "Ghost.h"
 using namespace std;
 
