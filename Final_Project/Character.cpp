@@ -47,10 +47,10 @@ int Character::doDamage()
 void Character::fight(BasicMonster &M)
 {
 	int temp, enemy_damage;
-	;
+
 	enemy_damage = 10 * level;
 
-	temp = health_points - this->damage;
+	temp = M.gethealth() - this->damage;
 	M.sethealth(temp);
 
 	health_points = this->health_points - enemy_damage;
