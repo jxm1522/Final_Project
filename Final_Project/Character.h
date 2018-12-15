@@ -5,7 +5,7 @@ using namespace std;
 
 class Character
 {
-private:
+protected:
 	int health_points, experience, level, armor, damage;
 	
 public:
