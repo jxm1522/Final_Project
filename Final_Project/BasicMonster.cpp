@@ -40,6 +40,4 @@ void BasicMonster::setlevel(int x)
 	level = x;
 }
 
-void BasicMonster::attack(const Character &Char) {
 
-}
