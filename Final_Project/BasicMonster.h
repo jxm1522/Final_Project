@@ -19,5 +19,7 @@ public:
 	int getlevel(void);
 	void setlevel(int x);
 	int checkifDead(void);
+
+	friend ostream  &operator<<(ostream &output, const BasicMonster Q);
 		
 };

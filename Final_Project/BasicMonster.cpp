@@ -50,3 +50,7 @@ int BasicMonster::checkifDead(void)
 }
 
 
+ostream & operator<<(ostream & output, const BasicMonster Q)
+{
+	// TODO: insert return statement here
+}
