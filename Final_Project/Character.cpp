@@ -63,8 +63,6 @@ void Character::fight(BasicMonster &M)
 
 	health_points = this->health_points - enemy_damage;
 
-
-	cout << "You attack the enemy!";
-	cout << "You do " << this->damage << " points of damage!";
-	cout << "The enemy does " << enemy_damage << " points of damage back!";
+	cout << "You do " << this->damage << " points of damage!" << endl;
+	cout << "The enemy does " << enemy_damage << " points of damage back!" << endl;
 }
