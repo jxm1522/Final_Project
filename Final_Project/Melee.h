@@ -3,8 +3,11 @@
 #include "Character.h"
 using namespace std;
 
-class Melee : protected Character
+class Melee : public Character
 {
+private: 
+	int health_points, experience, level;
+
 public:
 	
 	Melee();

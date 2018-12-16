@@ -3,8 +3,11 @@
 #include "Character.h"
 using namespace std;
 
-class Range : protected Character
+class Range : public Character
 {
+private:
+	int health_points, experience, level;
+
 public:
 	Range();
 	int doDamage();
