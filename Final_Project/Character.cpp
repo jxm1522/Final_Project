@@ -50,11 +50,11 @@ void Character::fight(BasicMonster &M)
 
 	enemy_damage = 10 * M.getlevel();
 
-	temp = M.gethealth() - this->damage;
+	temp = M.gethealth() - (10 * level);
 	M.sethealth(temp);
 
 	health_points = this->health_points - enemy_damage;
 
-	cout << "You do " << this->damage << " points of damage!" << endl;
+	cout << "You do " << (10 * level) << " points of damage!" << endl;
 	cout << "The enemy does " << enemy_damage << " points of damage back!" << endl;
 }
