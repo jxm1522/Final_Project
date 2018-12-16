@@ -1,13 +1,14 @@
 #pragma once;
 #include <iostream>
 #include "BasicMonster.h"
+#include <string>
 using namespace std;
 
 class Character
 {
 protected:
 	int health_points, experience, level, armor, damage;
-	
+	string name;
 public:
 	
 	// Setters and Getters
@@ -18,10 +19,12 @@ public:
 	void setExperience(int x);
 	int getLevel(void);
 	void setLevel(int x);
+	string getName();
+	void setName(string);
 	//int getArmor(void);
 	//void setArmor(int x);
 
-	int doDamage();
+	int damageVal();
 
 	// Interactive functions
 	void fight(BasicMonster &);

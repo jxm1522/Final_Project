@@ -3,7 +3,7 @@
 #include "Character.h"
 using namespace std;
 
-class Melee : protected Character
+class Melee : public Character
 {
 public:
 	

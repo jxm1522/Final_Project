@@ -5,8 +5,8 @@ using namespace std;
 
 class BasicMonster
 {
-private:
-	int health_points, experience, level;
+protected:
+	int health_points, experience, level, damage;
 
 public:
 
