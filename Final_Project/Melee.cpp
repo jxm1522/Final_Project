@@ -1,7 +1,4 @@
 #include "pch.h"
-#pragma once
-#include "pch.h"
-
 #include <iostream>
 #include "Melee.h"
 using namespace std;
@@ -17,4 +14,8 @@ Melee::Melee()
 int Melee::doDamage()
 {
 	return 15*level;
+}
+
+void Melee::setName(string newName) {
+	name = newName + "(Melee)";
 }

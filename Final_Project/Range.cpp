@@ -15,3 +15,7 @@ int Range::damageVal()
 {
 	return 11*level;
 }
+
+void Range::setName(string newName) {
+	name = newName + "(Range)";
+}
