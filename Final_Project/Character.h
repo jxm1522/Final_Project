@@ -24,7 +24,7 @@ public:
 	//int getArmor(void);
 	//void setArmor(int x);
 
-	int damageVal();
+	virtual int damageVal(); //Virtual Function to be overridden by child classes
 
 	// Interactive functions
 	void fight(BasicMonster &);
