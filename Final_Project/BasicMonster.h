@@ -1,5 +1,6 @@
 #pragma once;
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -7,7 +8,6 @@ class BasicMonster
 {
 protected:
 	int health_points, experience, level, damage;
-
 public:
 
 	// Setters and Getters

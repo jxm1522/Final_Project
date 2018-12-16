@@ -25,3 +25,8 @@ int Ghost::special()
 
 	return 10;
 }
+
+string Ghost::getName() {
+	string Ghosty;
+	return Ghosty;
+}
