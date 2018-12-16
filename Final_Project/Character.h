@@ -21,6 +21,8 @@ public:
 	void setLevel(int x);
 	string getName();
 	void setName(string);
+	
+	void 
 	//int getArmor(void);
 	//void setArmor(int x);
 

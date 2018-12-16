@@ -17,5 +17,5 @@ int Melee::doDamage()
 }
 
 void Melee::setName(string newName) {
-	name = newName + "(Melee)";
+	name = newName + "(Knight)";
 }

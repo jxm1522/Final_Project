@@ -7,4 +7,5 @@ class Tank : public Character {
 	
 public:
 	Tank();
+	void setName(string);
 };
