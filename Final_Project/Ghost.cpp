@@ -33,3 +33,8 @@ int Ghost::special()
 string Ghost::getName() {
 	return name;
 }
+
+int Ghost::damageVal()
+{
+	return damage * level;
+}

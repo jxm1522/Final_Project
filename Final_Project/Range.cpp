@@ -13,9 +13,9 @@ Range::Range()
 
 int Range::damageVal()
 {
-	return 11*level;
+	return damage * level;
 }
 
 void Range::setName(string newName) {
-	name = newName + "(Range)";
+	name = newName + "(Archer)";
 }

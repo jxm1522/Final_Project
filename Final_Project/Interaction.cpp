@@ -49,20 +49,25 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 			} while (monstList[monsterChoice].checkifDead());
 
 
-			int monstHealth = monstList[monsterChoice].gethealth();
+			int monstHealth = monstList[monsterChoice].gethealth(); //Combat happens here
 			int damage = monstHealth - charList[characterChoice].damageVal();
 			monstList[monsterChoice].sethealth(damage);
 			charList[characterChoice].setAttackStatus(true);
 			cout << charList[characterChoice].getName() << " attacks! " << endl;
-			cout << charList[characterChoice].getName() << " does " << charList[characterChoice].damageVal() << endl;
+			cout << charList[characterChoice].getName() << " does " << charList[characterChoice].damageVal() << " damage" << endl << endl;
 
 		}
 
-		 // Monster side attacks
-		
+		 
+		for (int i = 0; i < monstList.size(); i++) {		// Monster side attacks
+			int randChar = rand() % charList.size();
+			int damage = charList[randChar].getHealth() - monstList[characterChoice].damageVal();
+			charList[0].setHealth(damage);
+			cout << monstList[i].getName() << " " << i << " attacks! " << charList[randChar].getName() << endl;
+			cout << monstList[i].getName() << " does " << monstList[i].damageVal() << " damage" << endl << endl;
+		}
 
-
-		for (int i = 0; i < charList.size(); i++) { //Resets attack status for characters at end of monster turn
+		for (int i = 0; i < charList.size(); i++) {			//Resets attack status for characters at end of monster turn
 			charList[i].setAttackStatus(false);
 		}
 	}

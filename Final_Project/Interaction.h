@@ -6,6 +6,7 @@
 #include "Tank.h"
 #include "Ghost.h"
 
+#include <stdlib.h>
 #include <iostream>
 #include <string>
 #include <vector>

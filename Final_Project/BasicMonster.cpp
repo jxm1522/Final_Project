@@ -52,3 +52,9 @@ bool BasicMonster::checkifDead(void)
 string BasicMonster::getName() {
 	return name;
 }
+
+
+int BasicMonster::damageVal()
+{
+	return 5 * level;
+}

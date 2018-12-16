@@ -57,7 +57,7 @@ void Character::setName(string new_name) {
 
 int Character::damageVal()
 {
-	return 10 * level;
+	return damage * level;
 }
 
 bool Character::getAttackStatus() {

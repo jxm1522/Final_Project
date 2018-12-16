@@ -22,4 +22,5 @@ public:
 	bool checkifDead(void);
 	string getName();
 		
+	virtual int damageVal();
 };

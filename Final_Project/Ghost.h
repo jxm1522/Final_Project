@@ -15,4 +15,5 @@ public:
 	Ghost(int health, int exp, int cur_level);
 	int special();
 	string getName();
+	int damageVal();
 };
