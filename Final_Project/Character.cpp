@@ -59,7 +59,7 @@ int Character::damageVal()
 {
 	return 10 * level;
 }
-
+/*
 void Character::fight(BasicMonster &M)
 {
 	int temp, enemy_damage;
@@ -74,3 +74,4 @@ void Character::fight(BasicMonster &M)
 	cout << "You do " << damageVal() << " points of damage!" << endl;
 	cout << "The enemy does " << enemy_damage << " points of damage back!" << endl;
 }
+*/

@@ -1,6 +1,5 @@
 #pragma once;
 #include <iostream>
-#include "BasicMonster.h"
 #include <string>
 using namespace std;
 
@@ -23,13 +22,11 @@ public:
 	string getName();
 	void setName(string);
 	
-	void 
 	//int getArmor(void);
 	//void setArmor(int x);
 
 	virtual int damageVal(); //Virtual Function to be overridden by child classes
 
 	// Interactive functions
-	void fight(BasicMonster &);
 };
 
