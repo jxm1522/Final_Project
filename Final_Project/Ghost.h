@@ -6,8 +6,8 @@ using namespace std;
 class Ghost : public BasicMonster
 {
 private:
-	int health_points, experience, level;
-	string name;
+	//int health_points, experience, level;
+	
 
 public:
 

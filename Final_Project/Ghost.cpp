@@ -7,16 +7,20 @@ using namespace std;
 
 Ghost::Ghost(int cur_level)
 {
+	name = "Ghost";
 	health_points = 50;
 	experience = 10;
 	level = cur_level;
+	damage = 10;
 }
 
 Ghost::Ghost(int health, int exp, int cur_level)
 {
+	name = "Ghost";
 	health_points = health;
 	experience = exp;
 	level = cur_level;
+	damage = 10;
 }
 
 int Ghost::special()
@@ -27,6 +31,5 @@ int Ghost::special()
 }
 
 string Ghost::getName() {
-	string Ghosty;
-	return Ghosty;
+	return name;
 }
