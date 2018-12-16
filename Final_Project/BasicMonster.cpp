@@ -41,4 +41,12 @@ void BasicMonster::setlevel(int x)
 	level = x;
 }
 
+int BasicMonster::checkifDead(void)
+{
+	if (health_points < 0)
+		return true;
+	else
+		return false;
+}
+
 

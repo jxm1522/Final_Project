@@ -39,6 +39,14 @@ void Character::setLevel(int x)
 	level = x;
 }
 
+int Character::checkifDead(void)
+{
+	if (health_points < 0)
+		return true;
+	else 
+		return false;
+}
+
 string Character::getName() {
 	return name;
 }

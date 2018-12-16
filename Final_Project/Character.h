@@ -19,6 +19,7 @@ public:
 	void setExperience(int x);
 	int getLevel(void);
 	void setLevel(int x);
+	int checkifDead(void);
 	string getName();
 	void setName(string);
 	//int getArmor(void);
