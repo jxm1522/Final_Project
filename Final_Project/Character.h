@@ -6,7 +6,8 @@ using namespace std;
 class Character
 {
 protected:
-	int health_points, experience, level, armor, damage;
+	int health_points, experience, level, damage;
+	bool attackStatus;
 	string name;
 public:
 	
@@ -21,12 +22,10 @@ public:
 	int checkifDead(void);
 	string getName();
 	void setName(string);
-	
-	//int getArmor(void);
-	//void setArmor(int x);
+	bool getAttackStatus();
+	void setAttackStatus(bool);
 
 	virtual int damageVal(); //Virtual Function to be overridden by child classes
 
-	// Interactive functions
 };
 

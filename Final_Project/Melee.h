@@ -11,6 +11,6 @@ class Melee : public Character
 public:
 	
 	Melee();
-	int doDamage();
+	int damageVal();
 	void setName(string);
 };

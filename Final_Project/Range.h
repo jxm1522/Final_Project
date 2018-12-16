@@ -7,7 +7,7 @@ using namespace std;
 class Range : public Character
 {
 private:
-	int health_points, experience, level;
+	//int health_points, experience, level;
 
 public:
 	Range();

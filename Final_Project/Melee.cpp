@@ -11,9 +11,9 @@ Melee::Melee()
 	level = 1;
 }
 
-int Melee::doDamage()
+int Melee::damageVal()
 {
-	return 15*level;
+	return damage * level;
 }
 
 void Melee::setName(string newName) {

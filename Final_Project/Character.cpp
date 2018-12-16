@@ -1,7 +1,7 @@
 #include "pch.h"
 #include <iostream>
 #include "Character.h"
-#include "BasicMonster.h"
+
 using namespace std;
 
 void Character::levelUp()
@@ -41,7 +41,7 @@ void Character::setLevel(int x)
 
 int Character::checkifDead(void)
 {
-	if (health_points < 0)
+	if (health_points <= 0)
 		return true;
 	else 
 		return false;
@@ -57,21 +57,13 @@ void Character::setName(string new_name) {
 
 int Character::damageVal()
 {
-	return 10 * level;
+	return damage * level;
 }
-/*
-void Character::fight(BasicMonster &M)
-{
-	int temp, enemy_damage;
 
-	enemy_damage = 10 * M.getlevel();
-
-	temp = M.gethealth() - damageVal();
-	M.sethealth(temp);
-
-	health_points = this->health_points - enemy_damage;
-
-	cout << "You do " << damageVal() << " points of damage!" << endl;
-	cout << "The enemy does " << enemy_damage << " points of damage back!" << endl;
+bool Character::getAttackStatus() {
+	return attackStatus;
 }
-*/
+
+void Character::setAttackStatus(bool status) {
+	attackStatus = status;
+}

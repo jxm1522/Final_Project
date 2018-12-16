@@ -1,7 +1,7 @@
 #include "pch.h"
 #include <iostream>
 #include "BasicMonster.h"
-#include "Character.h"
+
 using namespace std;
 
 
@@ -41,16 +41,20 @@ void BasicMonster::setlevel(int x)
 	level = x;
 }
 
-int BasicMonster::checkifDead(void)
+bool BasicMonster::checkifDead(void)
 {
-	if (health_points < 0)
+	if (health_points <= 0)
 		return true;
 	else
 		return false;
 }
 
+string BasicMonster::getName() {
+	return name;
+}
 
-ostream & operator<<(ostream & output, const BasicMonster Q)
+
+int BasicMonster::damageVal()
 {
-	// TODO: insert return statement here
+	return 5 * level;
 }
