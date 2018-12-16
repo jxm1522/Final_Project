@@ -10,5 +10,5 @@ private:
 
 public:
 	Range();
-	int doDamage();
+	int damageVal();
 };

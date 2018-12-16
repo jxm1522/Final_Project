@@ -39,7 +39,15 @@ void Character::setLevel(int x)
 	level = x;
 }
 
-int Character::doDamage()
+string Character::getName() {
+	return name;
+}
+
+void Character::setName(string new_name) {
+	name = new_name;
+}
+
+int Character::damageVal()
 {
 	return 10 * level;
 }
