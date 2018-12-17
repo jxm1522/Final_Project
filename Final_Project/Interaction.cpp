@@ -31,7 +31,7 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 
 			while (charList[characterChoice].getHealth() <= 0 || charList[characterChoice].getAttackStatus() == true) { //Makes sure character choice is valid
 
-				cout << "Please choose a character that is able to attack (You may not attack with the same character twice in a row" << endl;
+				cout << "Please choose a character that is able to attack (You may not attack with the same character twice in a row)" << endl;
 				cout << endl << "Which character would you like to attack with? " << endl;
 				cin >> characterChoice;
 				--characterChoice;
