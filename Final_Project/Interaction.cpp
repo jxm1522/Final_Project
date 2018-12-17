@@ -31,8 +31,8 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 
 			while (charList[characterChoice].getHealth() <= 0 || charList[characterChoice].getAttackStatus() == true) { //Makes sure character choice is valid
 
-				cout << "Please choose a character that is able to attack" << endl;
-				cout << "Which character would you like to attack with? " << endl;
+				cout << "Please choose a character that is able to attack (You may not attack with the same character twice in a row" << endl;
+				cout << endl << "Which character would you like to attack with? " << endl;
 				cin >> characterChoice;
 				--characterChoice;
 
@@ -40,7 +40,7 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 
 			do {
 
-				cout << "Which monster would you like to attack? Choose between 1 and " << monstList.size() << ": "; //Monster selection to be attacked
+				cout << endl << "Which monster would you like to attack? Choose between 1 and " << monstList.size() << ": "; //Monster selection to be attacked
 				cin >> monsterChoice;
 				--monsterChoice;
 				if (monstList[monsterChoice].checkifDead()) {
@@ -53,7 +53,7 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 			int damage = monstHealth - charList[characterChoice].damageVal();
 			monstList[monsterChoice].sethealth(damage);
 			charList[characterChoice].setAttackStatus(true);
-			cout << charList[characterChoice].getName() << " attacks! " << endl;
+			cout << endl << charList[characterChoice].getName() << " attacks! " << endl;
 			cout << charList[characterChoice].getName() << " does " << charList[characterChoice].damageVal() << " damage" << endl << endl;
 
 		}
