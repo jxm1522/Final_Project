@@ -67,3 +67,7 @@ bool Character::getAttackStatus() {
 void Character::setAttackStatus(bool status) {
 	attackStatus = status;
 }
+
+void Character::operator++(int) {
+	health_points = health_points + 20;
+}

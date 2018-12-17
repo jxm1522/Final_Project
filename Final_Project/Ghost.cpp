@@ -8,7 +8,7 @@ using namespace std;
 Ghost::Ghost(int cur_level)
 {
 	name = "Ghost";
-	health_points = 50;
+	health_points = 70;
 	experience = 10;
 	level = cur_level;
 	damage = 10;
@@ -20,7 +20,7 @@ Ghost::Ghost(int health, int exp, int cur_level)
 	health_points = health;
 	experience = exp;
 	level = cur_level;
-	damage = 10;
+	damage = 13;
 }
 
 int Ghost::special()
@@ -36,5 +36,6 @@ string Ghost::getName() {
 
 int Ghost::damageVal()
 {
-	return damage * level;
+	int damageRand = rand() % 5;
+	return damage * level + damageRand;
 }

@@ -6,9 +6,15 @@
 
 Tank::Tank(){
 	damage = 15;
-	health_points = 70;
+	health_points = 90;
 	experience = 0;
 	level = 1;
+}
+
+int Tank::damageVal()
+{
+	int damageRand = rand() % 7;
+	return damage * level + damageRand;
 }
 
 void Tank::setName(string new_name) {

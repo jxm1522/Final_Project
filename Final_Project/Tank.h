@@ -7,5 +7,6 @@ class Tank : public Character {
 	
 public:
 	Tank();
+	int damageVal();
 	void setName(string);
 };

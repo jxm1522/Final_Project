@@ -24,6 +24,7 @@ public:
 	void setName(string);
 	bool getAttackStatus();
 	void setAttackStatus(bool);
+	void operator++(int);
 
 	virtual int damageVal(); //Virtual Function to be overridden by child classes
 

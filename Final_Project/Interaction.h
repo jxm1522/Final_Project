@@ -12,4 +12,4 @@
 #include <vector>
 
 void fight(vector<class Character> &charList, vector<class BasicMonster> &monstList);  
-int checkTeam(vector<class Character> &charList, vector<class BasicMonster> &monstList); //Checks if whole team is dead 
+int checkTeam(vector<class Character> &charList, vector<class BasicMonster> &monstList); //Checks if whole team of characters or monsters is dead 

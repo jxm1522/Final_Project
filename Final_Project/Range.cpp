@@ -6,14 +6,15 @@ using namespace std;
 Range::Range()
 {
 	damage = 35;
-	health_points = 40;
+	health_points = 45;
 	experience = 0;
 	level = 1;
 }
 
 int Range::damageVal()
 {
-	return damage * level;
+	int damageRand = rand() % 10;
+	return damage * level + damageRand;
 }
 
 void Range::setName(string newName) {
