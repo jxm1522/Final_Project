@@ -5,6 +5,7 @@
 #include "Range.h"
 #include "Tank.h"
 #include "Ghost.h"
+#include "Goblin.h"
 
 #include <stdlib.h>
 #include <iostream>
