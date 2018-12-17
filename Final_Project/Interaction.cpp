@@ -23,7 +23,7 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 				cout << "Which character would you like to interact with? " << endl; //Character Selection to attack
 			for (int j = 1; j <= charList.size(); j++) {
 				cout << "(" << j << ") : " << charList[(j - 1)].getName();
-				if (charList[i].getAttackStatus) {
+				if (charList[i].getAttackStatus()) {
 					cout << " /Character unavailable" << endl;
 				}
 				cout << endl;
