@@ -62,7 +62,7 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 		for (int i = 0; i < monstList.size(); i++) {		// Monster side attacks
 			int randChar = rand() % charList.size();
 			int damage = charList[randChar].getHealth() - monstList[characterChoice].damageVal();
-			charList[0].setHealth(damage);
+			charList[randChar].setHealth(damage);
 			cout << monstList[i].getName() << " " << i << " attacks! " << charList[randChar].getName() << endl;
 			cout << monstList[i].getName() << " does " << monstList[i].damageVal() << " damage" << endl << endl;
 		}
