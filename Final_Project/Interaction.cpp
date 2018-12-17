@@ -23,15 +23,15 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 				cout << "Which character would you like to interact with? " << endl; //Character Selection to attack
 			for (int j = 1; j <= charList.size(); j++) {
 				cout << "(" << j << ") : " << charList[(j - 1)].getName();
-				if (charList[i].getAttackStatus) {
-					cout << " /Character unavailable" << endl;
+				if (charList[(j-1)].getAttackStatus() == true) {
+					cout << " /Character unavailable";
 				}
 				cout << endl;
 			}
 			cin >> characterChoice;
 			--characterChoice;
 
-			while (charList[characterChoice].getHealth() <= 0 && charList[characterChoice].getAttackStatus() == true) { //Makes sure character choice is valid
+			while (charList[characterChoice].getHealth() <= 0 || charList[characterChoice].getAttackStatus() == true) { //Makes sure character choice is valid
 
 				cout << "Please choose a character that hasn't healed or attacked (You may not interact with the same character twice in one turn)" << endl;
 				cout << endl << "Which character would you like to interact with? " << endl;
@@ -75,13 +75,13 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 					cout << charList[characterChoice].getName() << " has missed!" << endl;
 					charList[characterChoice].setAttackStatus(true);
 				}
-				else {
+				//else {
 					int damage = monstList[monsterChoice].gethealth() - charList[characterChoice].damageVal();
 					monstList[monsterChoice].sethealth(damage);
 					charList[characterChoice].setAttackStatus(true);
 					cout << endl << charList[characterChoice].getName() << " attacks! " << endl;
 					cout << charList[characterChoice].getName() << " does " << charList[characterChoice].damageVal() << " damage" << endl << endl;
-				}
+				//}
 			}			//End Attack
 		}
 
@@ -91,13 +91,13 @@ void fight(vector<class Character> &charList, vector<class BasicMonster> &monstL
 			if (missMonst > 75) {
 				cout << monstList[i].getName() << " " << i << " misses their attack!" << endl;
 			}
-			else {
+			//else {
 				int randChar = rand() % charList.size();
 				int damage = charList[randChar].getHealth() - monstList[characterChoice].damageVal();
 				charList[randChar].setHealth(damage);
 				cout << monstList[i].getName() << " " << i << " attacks! " << charList[randChar].getName() << endl;
 				cout << monstList[i].getName() << " does " << monstList[i].damageVal() << " damage" << endl << endl;
-			}
+			//}
 		}
 
 		for (int i = 0; i < charList.size(); i++) {			//Resets attack status for all characters at end of monster turn
